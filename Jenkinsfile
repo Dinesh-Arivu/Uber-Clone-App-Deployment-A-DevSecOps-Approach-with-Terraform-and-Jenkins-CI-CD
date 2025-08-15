@@ -70,5 +70,17 @@ pipeline{
                 sh "docker run -d --name uber -p 3000:3000 dinesh1097/uber:latest"
             }
         }
+        stage('Deploy to kubernets'){
+            steps{
+                script{
+                    dir('K8S') {
+                        withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'k8s', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
+                                sh 'kubectl apply -f deployment.yml'
+                                sh 'kubectl apply -f service.yml'
+                        }
+                    }
+                }
+            }
+        }
     }
 }
