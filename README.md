@@ -1,3 +1,7 @@
+### DevSecOps Project Diagram:
+<img width="476" height="299" alt="Uber Clone App Deployment- A DevSecOps Approach with Terraform and Jenkins CI CD" src="https://github.com/user-attachments/assets/f3bc60b1-6af4-4773-b90b-033420049e99" />
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
